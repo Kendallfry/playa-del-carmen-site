@@ -139,31 +139,6 @@ th {
 
 /* Image Styling */
 
-#attraction-image,
-#food-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
-}
-
-#attraction-image {
-  margin: 100px auto;
-}
-
-#about-image {
-  max-width: 50%;
-  height: auto;
-  flex: 1 1 200px;
-  display: block;
-  margin: 20px auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* Shared Flex Gallery Layout */
-
 .about-images,
 .main-images,
 .attract-images,
