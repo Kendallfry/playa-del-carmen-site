@@ -217,6 +217,27 @@ th {
     object-fit: cover; /* Determines how the image should be resized to fit its container */
 	border-radius: 10px;
 }
+}
+.food-images {
+    display: flex; /* Makes the container a flex container */
+    flex-wrap: wrap; /* Allows images to wrap onto the next line if there's not enough space */
+    justify-content: space-around; /* Distributes space around the images */
+    gap: 10px; /* Adds space between images */
+    padding: 10px; /* Adds padding around the gallery */
+}
+
+.food-images img {
+    max-width: 100%; /* Ensures images don't exceed their container's width */
+    height: auto; /* Maintains aspect ratio */
+    min-width: 0; /* Allows images to shrink smaller than their content size if needed, {Link: according to Stack Overflow https://stackoverflow.com/questions/41774646/image-is-not-resizing-in-a-flexbox-layout}*/
+    flex: 1 1 200px; /* Allows images to grow and shrink, with a base width of 200px. {Link: according to MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink}*/
+    /* The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis. */
+    /* flex-grow: 1 allows the images to grow proportionally. */
+    /* flex-shrink: 1 allows the images to shrink proportionally. */
+    /* flex-basis: 200px sets the initial size of the images. */
+    object-fit: cover; /* Determines how the image should be resized to fit its container */
+	border-radius: 10px;
+}
 /* video section*/
 .playa-video {
   display: flex;             /* Enable Flexbox on the container */
