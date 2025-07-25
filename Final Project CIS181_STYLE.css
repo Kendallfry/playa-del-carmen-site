@@ -3,6 +3,28 @@
 /* Visit Playa Del Carmen Webpage / Final Project CIS 181 
    Author: Kendall Fry */
 
+/*My coding here took some research to come up with the best color for the theme of a tropical trip. I was pretty consistent with the alignment which was pretty simple
+and centered. Once I found good sizing and structure options for photos, videos, fonts and background, I just used the same practices consitently across the site. I had a lot of repetative coding
+CSS coding like this: 
+.playa-video {
+  display: flex;             
+  justify-content: center;   
+  align-items: center;       
+  min-height: 50vh;  
+}
+.xplore-video {
+  display: flex;             
+  justify-content: center;  
+  align-items: center;  
+  min-height: 50vh;  
+.food-video {
+  display: flex;        
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}    
+I cleaned this up before deciding to submit my site. */
+
 /* HTML, Body, Header Styles */
 
 html {
