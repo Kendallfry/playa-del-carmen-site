@@ -217,7 +217,6 @@ th {
     object-fit: cover; /* Determines how the image should be resized to fit its container */
 	border-radius: 10px;
 }
-}
 .food-images {
     display: flex; /* Makes the container a flex container */
     flex-wrap: wrap; /* Allows images to wrap onto the next line if there's not enough space */
