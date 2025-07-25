@@ -1,11 +1,9 @@
 @charset "utf-8";
 
-/*
-   Visit Playa Del Carmen Webpage/Final Project CIS 181
-   Author: Kendall Fry
-*/
+/* Visit Playa Del Carmen Webpage / Final Project CIS 181 
+   Author: Kendall Fry */
 
-/* HTML, Body and Header styles */
+/* HTML, Body, Header Styles */
 
 html {
   font-family: 'Open Sans', sans-serif;
@@ -16,10 +14,10 @@ html {
 }
 
 body {
-   margin: 0px auto;
-   min-width: 320px;
-   max-width: 1100px; 
-   border: 40px solid #B0E0E6;  
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1100px;
+  border: 40px solid #B0E0E6;
 }
 
 header {
@@ -27,236 +25,159 @@ header {
   margin-bottom: 40px;
 }
 
-header h1 {
+header h1,
+.section h2,
+h3 {
   font-family: 'Pacifico', cursive;
-  font-size: 3em;
   color: #00796B;
   text-align: center;
   letter-spacing: 0.03em;
   line-height: 1.2em;
-  margin-bottom: 20px;
   font-weight: normal;
+  margin-bottom: 20px;
 }
+
+header h1 {
+  font-size: 3em;
+}
+
 .section h2 {
-  font-family: 'Pacifico', cursive;
   font-size: 2em;
-  color: #00796B;
-  text-align: center;
-  letter-spacing: 0.03em;
-  line-height: 1.2em;
-  margin-bottom: 20px;
-  font-weight: normal;
 }
 
 h3 {
-  font-family: 'Pacifico', cursive;
   font-size: 1.5em;
-  color: #00796B;
-  text-align: center;
-  letter-spacing: 0.03em;
-  line-height: 1.2em;
-  margin-bottom: 20px;
-  font-weight: normal;
 }
 
 form {
   background-color: #B0E0E6;
-  padding: 10px 10px;
+  padding: 10px;
   border-radius: 8px;
   max-width: 500px;
   margin: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
- 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Navigation Styles */	
+/* Navigation Styles */
 
 nav {
-	font-size: 1em;
+  font-size: 1em;
 }
 
 nav > ul {
-	line-height: 2em;
-	list-style-type: none;
-	padding-left: 5px;
-	display: flex; /* Enable flexbox */
-    justify-content: center; /* Center items horizontally */
-}
-nav > ul > li{
-	margin-right: 60px; 
-}
-nav > ul > li > a:link, nav > ul > li > a:visited 
-{color: black;
-text-decoration: none;
+  line-height: 2em;
+  list-style-type: none;
+  padding-left: 5px;
+  display: flex;
+  justify-content: center;
 }
 
-nav > ul > li > a:hover, nav > ul > li > a:active {
-	color: green; 
-	text-decoration: underline;
+nav > ul > li {
+  margin-right: 60px;
 }
 
-/* Article Styles */
+nav > ul > li > a:link,
+nav > ul > li > a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:active {
+  color: green;
+  text-decoration: underline;
+}
+
+/* Article & Table Styles */
 
 article {
-   width: 90%;
-   margin: 20px auto;
+  width: 90%;
+  margin: 20px auto;
 }
-/* Table styles */
+
 .home-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 th, td {
-    border: 1px solid;
-    padding: 8px;
-    text-align: center;
-}
-.bronze {
-  color: #cd7f32;
-}
-.silver {
-  color: #c0c0c0;
-}
-.gold {
-  color: #ffd700;
+  border: 1px solid;
+  padding: 8px;
+  text-align: center;
 }
 
 th {
-    background-color: linear-gradient(to bottom, #E0F7FA, #FFF8E1);
+  background-color: #E0F7FA;
 }
 
-/* Image sizing and layout*/
+.bronze { color: #cd7f32; }
+.silver { color: #c0c0c0; }
+.gold   { color: #ffd700; }
+
+/* Image Styling */
+
+#attraction-image,
+#food-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
 
 #attraction-image {
-	width: 100%; 
-	height: auto; /* keeps aspect ratio */
-	display: block;
-	margin: 100px auto; /* centers the image */
-	border-radius: 10px; /*soft rounded corners */
-}
-
-#food-image {
-	width: 100%; 
-	height: auto; /* keeps aspect ratio */
-	display: block;
-	margin: 20px auto; /* centers the image */
-	border-radius: 10px; /*soft rounded corners */
+  margin: 100px auto;
 }
 
 #about-image {
-	max-width: 50%; 
-	height: auto; /* keeps aspect ratio */
-	min-width: 0;
-	flex: 1 1 200px;
-	display: block;
-	margin: 20px auto; /* centers the image */
-	object-fit: cover;
-	border-radius: 10px; /*soft rounded corners */
+  max-width: 50%;
+  height: auto;
+  flex: 1 1 200px;
+  display: block;
+  margin: 20px auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.about-images {
-    display: flex; /* Makes the container a flex container */
-    flex-wrap: wrap; /* Allows images to wrap onto the next line if there's not enough space */
-    justify-content: space-around; /* Distributes space around the images */
-    gap: 10px; /* Adds space between images */
-    padding: 10px; /* Adds padding around the gallery */
-}
+/* Shared Flex Gallery Layout */
 
-.about-images img {
-    max-width: 100%; /* Ensures images don't exceed their container's width */
-    height: auto; /* Maintains aspect ratio */
-    min-width: 0; /* Allows images to shrink smaller than their content size if needed, {Link: according to Stack Overflow https://stackoverflow.com/questions/41774646/image-is-not-resizing-in-a-flexbox-layout}*/
-    flex: 1 1 200px; /* Allows images to grow and shrink, with a base width of 200px. {Link: according to MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink}*/
-    /* The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis. */
-    /* flex-grow: 1 allows the images to grow proportionally. */
-    /* flex-shrink: 1 allows the images to shrink proportionally. */
-    /* flex-basis: 200px sets the initial size of the images. */
-    object-fit: cover; /* Determines how the image should be resized to fit its container */
-	border-radius: 10px;
-}
-.main-images {
-    display: flex; /* Makes the container a flex container */
-    flex-wrap: wrap; /* Allows images to wrap onto the next line if there's not enough space */
-    justify-content: space-around; /* Distributes space around the images */
-    gap: 10px; /* Adds space between images */
-    padding: 10px; /* Adds padding around the gallery */
-}
-
-.main-images img {
-    max-width: 100%; /* Ensures images don't exceed their container's width */
-    height: auto; /* Maintains aspect ratio */
-    min-width: 0; /* Allows images to shrink smaller than their content size if needed, {Link: according to Stack Overflow https://stackoverflow.com/questions/41774646/image-is-not-resizing-in-a-flexbox-layout}*/
-    flex: 1 1 200px; /* Allows images to grow and shrink, with a base width of 200px. {Link: according to MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink}*/
-    /* The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis. */
-    /* flex-grow: 1 allows the images to grow proportionally. */
-    /* flex-shrink: 1 allows the images to shrink proportionally. */
-    /* flex-basis: 200px sets the initial size of the images. */
-    object-fit: cover; /* Determines how the image should be resized to fit its container */
-	border-radius: 10px;
-}
-.attract-images {
-    display: flex; /* Makes the container a flex container */
-    flex-wrap: wrap; /* Allows images to wrap onto the next line if there's not enough space */
-    justify-content: space-around; /* Distributes space around the images */
-    gap: 10px; /* Adds space between images */
-    padding: 10px; /* Adds padding around the gallery */
-}
-
-.attract-images img {
-    max-width: 100%; /* Ensures images don't exceed their container's width */
-    height: auto; /* Maintains aspect ratio */
-    min-width: 0; /* Allows images to shrink smaller than their content size if needed, {Link: according to Stack Overflow https://stackoverflow.com/questions/41774646/image-is-not-resizing-in-a-flexbox-layout}*/
-    flex: 1 1 200px; /* Allows images to grow and shrink, with a base width of 200px. {Link: according to MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink}*/
-    /* The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis. */
-    /* flex-grow: 1 allows the images to grow proportionally. */
-    /* flex-shrink: 1 allows the images to shrink proportionally. */
-    /* flex-basis: 200px sets the initial size of the images. */
-    object-fit: cover; /* Determines how the image should be resized to fit its container */
-	border-radius: 10px;
-}
+.about-images,
+.main-images,
+.attract-images,
 .food-images {
-    display: flex; /* Makes the container a flex container */
-    flex-wrap: wrap; /* Allows images to wrap onto the next line if there's not enough space */
-    justify-content: space-around; /* Distributes space around the images */
-    gap: 10px; /* Adds space between images */
-    padding: 10px; /* Adds padding around the gallery */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 10px;
 }
 
+.about-images img,
+.main-images img,
+.attract-images img,
 .food-images img {
-    max-width: 100%; /* Ensures images don't exceed their container's width */
-    height: auto; /* Maintains aspect ratio */
-    min-width: 0; /* Allows images to shrink smaller than their content size if needed, {Link: according to Stack Overflow https://stackoverflow.com/questions/41774646/image-is-not-resizing-in-a-flexbox-layout}*/
-    flex: 1 1 200px; /* Allows images to grow and shrink, with a base width of 200px. {Link: according to MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink}*/
-    /* The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis. */
-    /* flex-grow: 1 allows the images to grow proportionally. */
-    /* flex-shrink: 1 allows the images to shrink proportionally. */
-    /* flex-basis: 200px sets the initial size of the images. */
-    object-fit: cover; /* Determines how the image should be resized to fit its container */
-	border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  min-width: 0;
+  flex: 1 1 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
-/* video section*/
-.playa-video {
-  display: flex;             /* Enable Flexbox on the container */
-  justify-content: center;   /* Horizontally center items */
-  align-items: center;       /* Vertically center items */
-  min-height: 50vh;        /* Ensure the container takes full viewport height for vertical centering */
-}
-.xplore-video {
-  display: flex;             /* Enable Flexbox on the container */
-  justify-content: center;   /* Horizontally center items */
-  align-items: center;       /* Vertically center items */
-  min-height: 50vh;        /* Ensure the container takes full viewport height for vertical centering */
-}
+
+/* Video Sections */
+
+.playa-video,
+.xplore-video,
 .food-video {
-  display: flex;             /* Enable Flexbox on the container */
-  justify-content: center;   /* Horizontally center items */
-  align-items: center;       /* Vertically center items */
-  min-height: 50vh;        /* Ensure the container takes full viewport height for vertical centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
 }
+
 /* Footer */
+
 footer {
   text-align: center;
   margin-top: 50px;
