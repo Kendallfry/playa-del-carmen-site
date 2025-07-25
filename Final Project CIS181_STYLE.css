@@ -139,6 +139,16 @@ th {
 
 /* Image Styling */
 
+#about-image {
+  max-width: 50%;
+  height: auto;
+  flex: 1 1 200px;
+  display: block;
+  margin: 20px auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .about-images,
 .main-images,
 .attract-images,
