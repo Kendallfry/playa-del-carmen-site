@@ -250,6 +250,12 @@ th {
   align-items: center;       /* Vertically center items */
   min-height: 50vh;        /* Ensure the container takes full viewport height for vertical centering */
 }
+.food-video {
+  display: flex;             /* Enable Flexbox on the container */
+  justify-content: center;   /* Horizontally center items */
+  align-items: center;       /* Vertically center items */
+  min-height: 50vh;        /* Ensure the container takes full viewport height for vertical centering */
+}
 /* Footer */
 footer {
   text-align: center;
