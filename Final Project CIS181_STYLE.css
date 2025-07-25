@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+/*
+   Visit Playa Del Carmen Webpage/Final Project CIS 181
+   Author: Kendall Fry
+*/
+
+/* HTML, Body and Header styles */
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to bottom, #E0F7FA, #FFF8E1);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+body {
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1100px; 
+   border: 40px solid #B0E0E6;  
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  color: #00796B;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.section h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color: #00796B;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  color: #00796B;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+form {
+  background-color: #B0E0E6;
+  padding: 10px 10px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ 
+}
+
+
+/* Navigation Styles */	
+
+nav {
+	font-size: 1em;
+}
+
+nav > ul {
+	line-height: 2em;
+	list-style-type: none;
+	padding-left: 5px;
+	display: flex; /* Enable flexbox */
+    justify-content: center; /* Center items horizontally */
+}
+nav > ul > li{
+	margin-right: 60px; 
+}
+nav > ul > li > a:link, nav > ul > li > a:visited 
+{color: black;
+text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	color: green; 
+	text-decoration: underline;
+}
+
+/* Article Styles */
+
+article {
+   width: 90%;
+   margin: 20px auto;
+}
+/* Table styles */
+.home-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 8px;
+    text-align: center;
+}
+.bronze {
+  color: #cd7f32;
+}
+.silver {
+  color: #c0c0c0;
+}
+.gold {
+  color: #ffd700;
+}
+
+th {
+    background-color: linear-gradient(to bottom, #E0F7FA, #FFF8E1);
+}
+
+/* Image sizing and layout*/
+
+#attraction-image {
+	width: 100%; 
+	height: auto; /* keeps aspect ratio */
+	display: block;
+	margin: 100px auto; /* centers the image */
+	border-radius: 10px; /*soft rounded corners */
+}
+
+#food-image {
+	width: 100%; 
+	height: auto; /* keeps aspect ratio */
+	display: block;
+	margin: 20px auto; /* centers the image */
+	border-radius: 10px; /*soft rounded corners */
+}
+
+#about-image {
+	max-width: 50%; 
+	height: auto; /* keeps aspect ratio */
+	min-width: 0;
+	flex: 1 1 200px;
+	display: block;
+	margin: 20px auto; /* centers the image */
+	object-fit: cover;
+	border-radius: 10px; /*soft rounded corners */
+}
+
+.about-images {
+    display: flex; /* Makes the container a flex container */
+    flex-wrap: wrap; /* Allows images to wrap onto the next line if there's not enough space */
+    justify-content: space-around; /* Distributes space around the images */
+    gap: 10px; /* Adds space between images */
+    padding: 10px; /* Adds padding around the gallery */
+}
+
+.about-images img {
+    max-width: 100%; /* Ensures images don't exceed their container's width */
+    height: auto; /* Maintains aspect ratio */
+    min-width: 0; /* Allows images to shrink smaller than their content size if needed, {Link: according to Stack Overflow https://stackoverflow.com/questions/41774646/image-is-not-resizing-in-a-flexbox-layout}*/
+    flex: 1 1 200px; /* Allows images to grow and shrink, with a base width of 200px. {Link: according to MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink}*/
+    /* The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis. */
+    /* flex-grow: 1 allows the images to grow proportionally. */
+    /* flex-shrink: 1 allows the images to shrink proportionally. */
+    /* flex-basis: 200px sets the initial size of the images. */
+    object-fit: cover; /* Determines how the image should be resized to fit its container */
+	border-radius: 10px;
+}
+.main-images {
+    display: flex; /* Makes the container a flex container */
+    flex-wrap: wrap; /* Allows images to wrap onto the next line if there's not enough space */
+    justify-content: space-around; /* Distributes space around the images */
+    gap: 10px; /* Adds space between images */
+    padding: 10px; /* Adds padding around the gallery */
+}
+
+.main-images img {
+    max-width: 100%; /* Ensures images don't exceed their container's width */
+    height: auto; /* Maintains aspect ratio */
+    min-width: 0; /* Allows images to shrink smaller than their content size if needed, {Link: according to Stack Overflow https://stackoverflow.com/questions/41774646/image-is-not-resizing-in-a-flexbox-layout}*/
+    flex: 1 1 200px; /* Allows images to grow and shrink, with a base width of 200px. {Link: according to MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink}*/
+    /* The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis. */
+    /* flex-grow: 1 allows the images to grow proportionally. */
+    /* flex-shrink: 1 allows the images to shrink proportionally. */
+    /* flex-basis: 200px sets the initial size of the images. */
+    object-fit: cover; /* Determines how the image should be resized to fit its container */
+	border-radius: 10px;
+}
+.attract-images {
+    display: flex; /* Makes the container a flex container */
+    flex-wrap: wrap; /* Allows images to wrap onto the next line if there's not enough space */
+    justify-content: space-around; /* Distributes space around the images */
+    gap: 10px; /* Adds space between images */
+    padding: 10px; /* Adds padding around the gallery */
+}
+
+.attract-images img {
+    max-width: 100%; /* Ensures images don't exceed their container's width */
+    height: auto; /* Maintains aspect ratio */
+    min-width: 0; /* Allows images to shrink smaller than their content size if needed, {Link: according to Stack Overflow https://stackoverflow.com/questions/41774646/image-is-not-resizing-in-a-flexbox-layout}*/
+    flex: 1 1 200px; /* Allows images to grow and shrink, with a base width of 200px. {Link: according to MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink}*/
+    /* The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis. */
+    /* flex-grow: 1 allows the images to grow proportionally. */
+    /* flex-shrink: 1 allows the images to shrink proportionally. */
+    /* flex-basis: 200px sets the initial size of the images. */
+    object-fit: cover; /* Determines how the image should be resized to fit its container */
+	border-radius: 10px;
+}
+
+.playa-video {
+  display: flex;             /* Enable Flexbox on the container */
+  justify-content: center;   /* Horizontally center items */
+  align-items: center;       /* Vertically center items */
+  min-height: 50vh;        /* Ensure the container takes full viewport height for vertical centering */
+}
+/* video section*/
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #666;
+}
